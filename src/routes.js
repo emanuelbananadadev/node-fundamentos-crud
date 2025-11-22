@@ -10,7 +10,7 @@ export const routes = [
         handler: (req, res) => {
             const tasks = database.select("tasks")
 
-            return res.end(tasks)
+            return res.end(JSON.stringify(tasks))
         }
     },
     {
